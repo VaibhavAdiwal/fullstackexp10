@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Full Stack Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Full Stack Dashboard</h1>
+
+<button onclick="show('todo')">Todo App</button>
+<button onclick="show('blog')">Blog</button>
+<button onclick="show('social')">Social Media</button>
+
+<!-- TODO -->
+<div id="todo" class="section">
+  <h2>Todo App</h2>
+  <input id="todoInput" placeholder="Enter task">
+  <button onclick="addTodo()">Add</button>
+  <div id="todoList"></div>
+</div>
+
+<!-- BLOG -->
+<div id="blog" class="section">
+  <h2>Blog Platform</h2>
+  <input id="postInput" placeholder="Write post">
+  <button onclick="addPost()">Post</button>
+  <div id="posts"></div>
+</div>
+
+<!-- SOCIAL -->
+<div id="social" class="section">
+  <h2>Social Feed</h2>
+  <input id="feedInput" placeholder="What's on your mind?">
+  <button onclick="addFeed()">Post</button>
+  <div id="feed"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
